@@ -1,0 +1,30 @@
+@use "../abstracts/" as *;
+
+header {
+  font-family: $font-fam;
+  background: $drk;
+  padding: 1rem 0;
+  position: relative;
+  .container {
+    @include flex($jc: space-between, $ai: center);
+
+    nav {
+      ul {
+        list-style: none;
+        margin-bottom: 0;
+        @include flex($gap: 40px);
+
+        li {
+          a {
+            text-decoration: none;
+            color: $txt-white;
+            transition: 0.3s;
+            &:hover {
+              color: $brand-clr;
+            }
+          }
+        }
+      }
+    }
+  }
+}

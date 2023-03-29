@@ -1,0 +1,56 @@
+@use "../abstracts/" as *;
+
+section {
+  .aboutus {
+    text-align: center;
+    @include flexvertical($vgap: 50px);
+
+    @media (min-width: 1400px) {
+      position: relative;
+      left: 70px;
+      .right {
+        align-self: flex-start;
+      }
+
+      .left {
+        position: absolute;
+        z-index: 10;
+        right: 15%;
+        top: 10%;
+      }
+    }
+
+    .right {
+      img {
+        width: 100%;
+      }
+    }
+
+    .left {
+      box-shadow: 2px 2px 20px 2px $txt-grey;
+      background: $txt-white;
+      padding: 100px 40px;
+      max-width: 60ch;
+      text-align: start;
+      p {
+        font-size: 20px;
+      }
+
+      h2 + p {
+        margin-top: 2rem;
+      }
+
+      p + p {
+        margin-top: 1rem;
+      }
+
+      h2 {
+        font-weight: 700;
+      }
+
+      .link{
+        max-width: fit-content;
+      }
+    }
+  }
+}

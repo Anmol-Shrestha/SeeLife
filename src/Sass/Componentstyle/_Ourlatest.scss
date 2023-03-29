@@ -1,0 +1,38 @@
+@use "../abstracts/" as *;
+
+section.ourlatest {
+  background: $bg-subtle-white;
+
+  .latestgrp {
+    @include flex($jc: center, $ai: center, $gap: 40px);
+
+    .latestcard {
+      max-width: 400px;
+
+      div + div {
+        margin: 10px 0;
+      }
+
+      .image {
+        img {
+          width: 100%;
+        }
+      }
+      .mid {
+        padding: 30px 20px;
+        .row {
+          p {
+            font-size: 20px;
+            color: $txt-grey;
+          }
+        }
+        h5 {
+          transition: 0.5s;
+          &:hover {
+            color: $brand-clr;
+          }
+        }
+      }
+    }
+  }
+}

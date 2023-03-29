@@ -1,0 +1,60 @@
+@use "../abstracts/" as *;
+
+footer{
+    background: $footer-bg;
+
+    .row{
+       
+      
+        padding: 100px 0;
+             
+        div{
+            h2{
+                color: $txt-white;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+            p{
+                color:$txt-grey;
+            }
+        }
+
+        div{
+            h5{
+                color: $txt-white;
+                margin-bottom: 1.3rem;
+               
+            }
+            ul{
+                         list-style: none;
+                         padding-left: 0;
+
+                         a{
+                            line-height:30px;
+                            color: $txt-grey
+
+                         }
+            }
+        }
+
+        .gallery{
+
+          img{
+            
+          }
+
+        }
+
+
+        }
+
+        .row2{
+            background:#071721;
+            color: $txt-white;
+            padding: 20px 0;
+            p{
+                margin-bottom: 0;
+                
+            }
+        }
+}

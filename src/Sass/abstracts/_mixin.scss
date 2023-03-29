@@ -1,0 +1,18 @@
+@mixin flex($jc:null, $ai:null, $gap:null, $fd:row){
+
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+    flex-wrap: wrap;
+    flex-direction: $fd;
+
+}
+
+@mixin flexvertical($jc:center, $ai:center, $vgap:null){
+    display: flex;
+    flex-direction: column;
+    justify-content: $jc;
+    align-items: $ai;
+    gap:$vgap
+}

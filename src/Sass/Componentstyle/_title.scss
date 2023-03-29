@@ -1,0 +1,12 @@
+.top {
+  text-align: center;
+
+  div + p {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  .display-5 {
+    font-weight: 600;
+  }
+}

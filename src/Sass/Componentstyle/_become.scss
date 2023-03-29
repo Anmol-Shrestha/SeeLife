@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+
+section.become{
+    background: $brand-clr;
+    .container{
+       text-align: center;
+        color: $txt-white;
+               div + p {
+                padding: 20px 0;
+               }
+                    
+                    p{
+                        margin: auto;
+                        max-width: 80ch;
+                    }
+
+
+                    .link{
+                        margin: auto;
+                        width: fit-content;
+                    }
+    }
+}

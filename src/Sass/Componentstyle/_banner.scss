@@ -1,0 +1,37 @@
+@use "../abstracts/" as *;
+
+div + p {
+  margin-top: 1rem;
+}
+
+.Banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./home-banner.jpg.webp") no-repeat fixed center;
+  background-size: cover;
+
+  height: 100vh;
+  @include flexvertical($jc: center, $ai: center);
+  text-align: center;
+
+
+
+  .display-4 {
+    color: $secondary-clr;
+  }
+
+  .display-3 {
+    color: $txt-white;
+    font-weight: 600;
+  }
+
+  p {
+    color: $txt-white;
+
+    max-width: 70ch;
+  }
+
+  .links{
+    margin-top: 20px;
+    @include flex($jc:center, $ai:center, $gap:40px)
+  }
+}
